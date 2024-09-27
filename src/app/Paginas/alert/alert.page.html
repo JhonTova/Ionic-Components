@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Alert</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button expand="block" color="warning" id="Alert">Block</ion-button>
+  <ion-alert
+    trigger="Alert"
+    header="A Short Title Is Best"
+    subHeader="A Sub Header Is Optional"
+    message="A message should be a short, complete sentence."
+    [buttons]="alertButtons"
+  ></ion-alert>  
+</ion-content>
